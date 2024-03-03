@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		
+                 body{
+                background-color: black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+            width: 1200px;
+                background-color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index:100px;
+                top:0px;
+                left:0px;
+                right: 350px;
+                padding: 20px 10px;
+            
+                padding-top: 10px;
+            }
+            
+.logo{
+
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center; 
+            background:linear-gradient(to right,#ff0080,#ebe0d0,#EC9EC0);
+            color: transparent;
+            -webkit-background-clip:text;
+            animation: text 4s infinite alternate;
+        text-shadow: 0px 0px 20px f9ac9d;
+        }
+        @keyframes text{
+100%{
+    
+text-shadow: 0px 0px 20px #a91b60;
+}
+         
+    
+            }
+            nav li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0px 20px;
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 35px;
+                  letter-spacing: 1.5px;
+                cursor: pointer;
+                text-decoration: none;
+}
+ a{
+                font-size: 22px;
+                font-weight: bold;
+                text-decoration: underline;
+                color:#ffe4d6;
+            }
+            nav li a{
+                font-size: 25px;
+                color: #ff0080;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 35px;
+                font-weight: 600;
+            
+
+
+            }
+             nav li a.active,
+            nav li a:hover {
+                -webkit-text-fill-color:transparent;
+                font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0,#ece0b0);
+            color: transparent;
+            -webkit-background-clip:text;
+            border-bottom: 2px solid #a91b60;
+
+              }
+            
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+  margin-left: 400px;
+  border-radius: 70%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20%;
+}
+.flip-card:hover .flip-card-inner {
+
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20%;
+}
+.flip-card-front {
+  background-color: #ece0b0;
+  margin-top: 100px;
+
+}*/
+
+.flip-card-back {
+  background:linear-gradient( 45deg, #a91b60,#ff0080,#EC9EC0);
+  color: #ece0d0;
+  transform: rotateY(180deg);
+  padding-top: 50px;
+  width: 100%;
+  margin-top: 100px;
+    }
+    textarea{
+        margin-top:0px ;
+        height: 100px;
+        border-radius: 10px;
+        border-radius: 30px;
+        margin-left: 10px;
+        padding-right: 150px;
+        padding-left: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            margin-top: 50px;
+            background-color: #ece0b0;
+            border: 3px solid #a91b60;
+padding: 0px;
+
+    }
+    input{
+        height: 30px;
+        margin-top: 15px;
+        border-radius: 30px;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-right: 150px;
+        padding-left: 10px; 
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            background-color:#ece0b0;
+            border: 3px solid #a91b60;}
+            .mahi{
+            
+                padding:300px;
+                background-color: #ff0080;
+            }
+
+           h2{
+            font-family: Algerian;
+        text-decoration: none;
+            margin-top: 150px;
+            font-size: 100px;
+            font-weight: 600;
+            font-size: 100px;
+            font-weight: 900;
+            text-align: center;
+
+            background:linear-gradient(to right);
+            color: #a91b60;
+             box-shadow: rgb(38, 57, 77) 0px;
+            -webkit-background-clip:text;
+            animation: text 2s infinite alternate;
+        text-shadow: 0px 0px 20px f9ac9d;
+        }
+        @keyframes text{
+100%{
+    
+text-shadow: 0px 0px 20px #ff0080;
+        }
+
+}
+        }
+           } 
+           .btn{
+              width: 180px;
+    height: 48px;
+    background-color: #ece0bo;
+    font-size: 19px;
+    color: #ff0080;
+    border-radius:40px;
+    text-decoration:;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+           }
+           .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg,#ff0080,#a38089,#FB8DA0);
+    border-radius: 40px;
+    background-size: 200%;
+    z-index: -1;
+    background-position: 0 0;
+    filter: blur(5px);
+    transition: .3s ease;
+}
+.btn:hover::before{
+    background-position: 100% 0;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+   background: linear-gradient(45deg,#B21368,#FF0080,#EC9EC0,#a91b60,#A38089,#FB8DA0);
+   border-radius: 40px;
+   background-size: 200%;
+   z-index: -1;
+   transition: .5s ease;
+}
+.btn:hover::after{
+    background-position: 100% 0;}
+      #bu{
+        margin-left:20px;
+        background-color: #ece0b0;
+        color: #ff0080;
+        padding-left: 40px;
+        padding-right:40px ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        border: 2px solid #a91b60;
+        font-size: 20px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            font-weight: 10px;         
+}
+#mahi{
+                  background-color: #ece0b0;
+            height: 300px;
+            width: 300px;
+            margin-left: 50px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            margin-left: 80px;
+            margin-top: 50px; 
+            display: inline-block;
+            cursor: pointer;
+
+            
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;  
+         }
+         .fa-phone{
+            color:#ff0080;
+            height: 10px;
+            text-decoration: none;
+            width: 10px;animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation: demo;
+            font-size: 80px;
+            padding-left:40px ;
+                margin-left:70px;
+            }
+        .fa-envelope{
+             color:#ff0080;
+            height: 10px;
+            text-decoration: none;
+            width: 10px;animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation: demo;
+            font-size: 80px;
+            padding-left:40px ;
+                margin-left:70px;
+        }
+    .fa-map-marker{
+         color:#ff0080;
+            height: 10px;
+            text-decoration: none;
+            width: 10px;animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation: demo;
+            font-size: 80px;
+            padding-left:40px ;
+                margin-left:70px;
+    }
+     .fa-map-marker:hover{
+        color: #ece0b0;
+     }
+            h4{
+     
+    
+    font-size: 30px;
+    font-weight: bold;
+        color: #a91b60;
+    }
+    h1{
+margin-top:00px ;
+
+       font-family: Algerian;
+        text-decoration: none;
+            font-size: 50px;
+            font-weight: 60;
+            font-size: 100px;
+            font-weight: 00;
+            text-align: center;
+
+            background:linear-gradient(to right);
+            color: #a91b60;
+             box-shadow: rgb(38, 57, 77) 0px;
+            -webkit-background-clip:text;
+            animation: text 2s infinite alternate;
+        text-shadow: 0px 0px 20px f9ac9d;
+        }
+        @keyframes text{
+100%{
+    
+text-shadow: 0px 0px 20px #ff0080;
+        }
+
+}
+}
+}
+    
+        .btn{
+    width: 180px;
+    height: 48px;
+    background-color: white;
+    font-size: 19px;
+    color: wheat;
+    border-radius:40px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg,#ff0080,#a38089,#FB8DA0);
+    border-radius: 40px;
+    background-size: 200%;
+    z-index: -1;
+    background-position: 0 0;
+    filter: blur(5px);
+    filter: blur(5px);
+    transition: .3s ease;
+}
+.btn:hover::before{
+    background-position: 100% 0;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+   background: linear-gradient(45deg,#B21368,#FF0080,#EC9EC0,#a91b60,#A38089,#FB8DA0,#FB8DA0);
+   border-radius: 40px;
+   background-size: 200%;
+   z-index: -1;
+   transition: .5s ease;
+}
+.btn:hover::after{
+    background-position: 100% 0;}
+    .home-sci a{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(45deg, #a38089,#ffa8b5,#FF0080 );
+        border-radius: 50%;
+        font-size: 20px;
+        color:wheat;
+        text-decoration: none;
+        z-index: 1;
+         padding: 15PX;
+        filter: blur(0px);
+    transition: .3s ease;
+    padding: 10PX;
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #a91b60;
+}
+#mahi:hover{
+
+    background: transparent;
+    opacity:
+}
+#lo{
+    color: #ece0b0;
+    </style>
+}
+</style>    
+</head>
+<body>
+ <header>
+            <div class="logo">
+                <p>Mahi Jain</p>
+            </div>                    
+<nav>
+    <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="about portfilo.html">About</a></li>
+         <li><a href="rp.html" class="">Resume</a></li>
+        
+        <li><a href="pp pp.html">Projects</a></li>
+        <li><a href="cp.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<h1>CONTACT<SPAN id="lo"> FROM</SPAN></h1>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    
+    <div class="flip-card-back">
+    <input type="text" placeholder="name" ><br>
+    <input type="text" placeholder="email" ><br>
+    <input type="number" placeholder="subject"><br>
+    <textarea placeholder="Your message"></textarea><center><br>
+    <a href="#" class="btn"></a>
+    <button id="bu">SEND</center></button>
+
+    </form>
+    </div>
+    </div>
+</div>
+
+</div>
+<h1 id="hh">Contact <span id="lo">Information</span></h1>
+        <div id="as">
+    <div id="mahi">
+         <a href="#" class="fa fa-phone"></a>
+        <h4><center>Phone Number</center></h4><br>
+<h3> <center>8817298775<br>
+        </center></h3>
+    </div>
+    <div id="mahi">
+        <a href="#" class="fa fa-envelope"></a>
+        <h4><center>Email Address</center></h4><br>
+    <h3>    <center>mahijain605@gmail
+    </center></h3><br>
+    </div>
+    <div id="mahi">
+        <a href="#" class="fa fa-map-marker"></a>
+        <h4><center>our location</center></h4><br>
+    <h3>    <center> Katra Sagar MP </center><br></h3>
+    </div>
+</div>
+<iframe style="border:0; width: 100%; height: 270px; margin-top: 100px;" src= "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=india+Madhya Pradesh+Sagar+katra" frameborder="0" allowfullscreen></iframe>
+
+</body>
+</body>
+</html>

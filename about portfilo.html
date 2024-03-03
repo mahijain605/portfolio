@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+                 body{
+                background-color:black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color:;
+        }
+            header{
+            margin-top: 20px;
+                background-color:;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index:100px;
+                top:0px;
+                left:0px;
+                right: 0px;
+                padding: 20px 10px;
+                position: fixed;
+               height: 0px;
+            }
+            
+                nav li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0px 20px;
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 35px;
+                  letter-spacing: 1.5px;
+                cursor: pointer;
+                text-decoration: none;
+                margin-right: 50px;
+               
+}
+        
+            a{
+                font-size: 22px;
+                font-weight: bold;
+                text-decoration: underline;
+                color:#ff0080;
+
+            }
+            nav li a{
+                font-size: 25px;
+                text-decoration: none;
+                font-weight: 600;
+                margin-left: 15px;
+                color: :#ff0080;
+
+
+            }
+             nav li a.active,
+            nav li a:hover {
+                -webkit-text-fill-color:transparent;
+                font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0,#ece0b0);
+            color: transparent;
+            -webkit-background-clip:text;
+            border-bottom: 2px solid #a91b60;
+            border-bottom: 2px solid #a91b60;
+        }
+        .logo{
+
+            font-size: 30px;
+            font-weight: 20px;
+            text-align: center; 
+            background:linear-gradient(to right, #a91b60, #ff0080,#ebe0b0,#EC9EC0);
+            color: transparent;
+            -webkit-background-clip:text;
+            animation: text 4s infinite alternate;
+        text-shadow: 0px 0px 20px f9ac9d;
+        }
+        @keyframes text{
+100%{
+    
+text-shadow: 0px 0px 20px #a91b60;
+}
+ }        
+          .box{
+            position: relative;
+            height: 450px;
+            width: 250px;
+            background:;
+            margin-top: 140px;
+            margin-left: 50px;
+            }
+             .box::before
+        {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            height: 460px;
+            width: 260px;
+            background: linear-gradient(45deg,red,blue,grey,green,orange);
+            background-size:400% ;
+            width: calc(100% * 5px);
+            height: calc(100% * 5px);
+            z-index: -1;
+            animation: animate 20s linear infinite;
+            border-radius: 0%;
+            margin-top: 40px;
+            
+
+            }
+
+             .box::before{
+            position: absolute;
+            content: '';
+            left: -2px;
+top: -2px;
+height: 450px;
+width: 250px;
+ background:linear-gradient(45deg,pink,wheat,black,skyblue) ;
+background-size: 550px;
+width: calc(100%,5px);
+height: calc(100%,5px);
+ animation: animate 20s linear infinite;
+border-radius: 0%
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+margin-top: 0px}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 450% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.box::after{
+    filter: blur(50px);
+    opacity: 0.95;
+}
+.content img{
+
+    height: 450px;
+    width: 250px;
+    border-radius: 0%;
+    position: absolute;
+    border:wheat 1px solid;
+    box-shadow: #a91b60 0px 20px 30px -10px;
+    float: left;
+    margin-top: 0px;
+
+}
+.mo{
+	float: left;
+}
+.about-text {
+	margin-left: 300px;
+	margin-right: 100px;
+	width: 900px;
+	font-weight: bold;
+    margin-top: ;
+}
+
+.about-text p{
+    color:#ece0b0;
+    font-weight: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.about-text h1 span{
+	color:#ece0b0;
+    font-weight:600;
+    font-size: 40px;
+}
+.about-text h2{
+    color: #a91b60;
+    font-weight: 30px;
+    font-size:30px ;
+    
+}
+.about-text h1{
+    padding: 10px;
+}
+h1{
+	margin-left: 300px;
+	font-weight: 600;
+   color: #a91b60; 
+}
+h3 span{
+font-weight: 10px;
+color: pink;
+
+}
+h3{
+	font-weight: 50px;
+	color: grey;
+}
+.contaner{
+	display: grid;
+			width: 100px;
+			display: grid;
+			grid-gap: 10px 50px;
+			grid-template-rows:50px 50px   ;
+			grid-template-columns:250px  250px  ;
+			margin-right: 50px;
+    color:#ebe0b0;
+    font-size: 20px;
+    font-weight: 10px;
+}
+ #ja{
+font-size: 15px;
+font-weight: 5px;
+   color: #ff0080;
+
+
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+    background-color:;
+
+
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+.bar{
+    font-size: 23px;
+}
+
+    .technical-bars .bar{
+        margin-top: 40px 0px
+    }
+    .technical-bars .bar:first-child{
+        margin-top: 0px;
+
+    }
+    .technical-bars .bar:last-child{
+        margin-bottom: 0px;
+
+    }
+    .technical-bars .bar:info{
+        margin-bottom: 5px;
+}
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500px;
+    animation: showtext 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .progress-line{
+position: relative;
+border-radius: 10px;
+width: 100%;
+height: 5px;
+background-color: black;
+animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+transform: scaleX(0);
+transform-origin: left;
+}
+@keyframes animate{
+100%{
+    transform: scaleX(1);
+}
+}
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: skyblue;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s bic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+transform-origin: left;
+
+}
+
+.progress-line.html span{
+    width: 90%;
+    background-color: pink;
+}
+.radial-bars{
+    width: 100%;
+    height: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: black;
+stroke-dasharray: 502;
+stroke-dashoffset: 502;
+stroke-linecap:round ;
+animation: animate-bar 1s linear forwards;
+    fill:transparent;}
+    @keyframes animate-bar{
+        100%{
+            stroke-dashoffset: -1;
+        }
+    }
+    .path{
+        stroke-width: 10;
+        stroke: skyblue;
+        fill:transparent;
+        stroke-dashoffset: 502;
+        stroke-dasharray:502;
+        stroke-linecap: round;
+    }
+    .path-1{
+        animation: animate-path 1s 1s linear forwards;
+    }
+     .path-2{
+        animation: animate-path 1s 1s linear forwards;
+    }
+     .path-3{
+        animation: animate-path 1s 1s linear forwards;
+    }
+     .path-4{
+        animation: animate-path 1s 1s linear forwards;
+    }
+    @keyframes animate-path{
+        100%{
+            stroke-dashoffset: 50;;
+        }
+    }
+     @keyframes animate-path{
+        100%{
+            stroke-dashoffset: 175;;
+        }
+    }
+     @keyframes animate-path{
+        100%{
+            stroke-dashoffset: 125;;
+        }
+    }
+     @keyframes animate-path{
+        100%{
+            stroke-dashoffset: 75;;
+        }
+    }
+    .radial-bar .percenttage{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 17px;
+        font-weight: 500;
+        animation: showtext 0.5s 1s linear forwards;
+        opacity: 0;
+    }
+    .radial-bar .text{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        bottom: -5px;
+        transform: translate(-50px);
+        font-size: 17px;
+        
+    }
+    lable{
+        width: 500px;
+        height: 200px;
+        position: relative;
+        display: block;
+        background: #a91b60;
+        border-radius: 210px;
+        cursor: pointer;
+        box-shadow:inset 0px 5px 15px skyblue,inset 0px -5px 15px grey;
+    }
+    lable:after{
+        content: "";
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #ece0b0;
+        border-radius: 180px;
+        box-shadow:0px 5px 10px red ;
+    }
+    input{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    input:checked + label{
+        background: pink;
+    }
+    input:checked+label:after{
+left: 490px;
+transform: translatex(100%);
+background: grey;
+    }
+	</style>
+
+
+
+</head>
+<body>
+ <header>
+            <div class="logo">
+                <p>MAHI JAIN</p>
+            </div>                    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about portfilo.html" class="active">About</a></li>
+        <li><a href="rp.html">Resume</a></li>
+        <li><a href="pp pp.html">Projects</a></li>
+        <li><a href="cp.html">Contact</a></li>
+        <li><a href=""> <input type="checkbox" id="darkmood-toggle"/>
+            <label for="darkmood-toggle"></label></a></li>
+    </ul>
+</nav>
+</header>
+
+ <div class="text">
+ <div class="box">
+ <div class="content">
+<img class="mo" src="mahijain1.jpg">
+
+ <div class="about-text" >
+ 	<h1> About <span>me</span></h1>
+ 	<p> Hi I'm MAHI  JAIN...i'm pursuing Btech[Bachelor of technology degree]from Babulal tarabai institude of reasearch & technology Sagar MP.<br>
+ 	My objectives are to built skils and gain experience truth different averues to become a anange make and cooperate to be interprising and dyanamic in approach.</p> 
+ 	<h2> Software & Website Developer</h2>
+ 	<div class="contaner">
+ 	<div class="items item1"> Brithday :<span id="ja">6 may 2003</span></div>
+ 	 <div class="items item2">Age :<span id="ja">20</span></div>
+ 	 <div class="items item3">Phone :<span id="ja">+91 8817298775</span> </div>
+ 	 <div class="items item4"> Email :<span id="ja">Mahijain@gmail.com</span></div>
+     <div class="items item4"> City :<span id="ja">Sagar M.P INDIA</span></div>
+ 	
+
+ </div>
+<p> My strength areativity,flexibility,honesty,self-control,positive-thinker,disciplined...   and weakness too sensitive
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

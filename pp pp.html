@@ -1,0 +1,388 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        
+                 body{
+                background-color: black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+            
+            }
+             header{
+            
+                background-color:;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index:100px;
+                top:0px;
+                left:0px;
+                right: 1;
+        
+            
+            }
+             nav li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0px 20px;
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 35px;
+                  letter-spacing: 1.5px;
+                cursor: pointer;
+                text-decoration: none;
+}
+        
+            a{
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: underline;
+                color:#FF0080;
+            }
+            nav li a{
+                font-size: 25px;
+                color: #FF0080;
+                text-decoration: none;
+                font-weight: 600;
+                margin-left: 35px;
+
+           
+           /*.logo{
+                font-weight: px;
+                font-size: 35px;
+                background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0);
+                background: n;
+                animation: animate 3s ease;
+            }
+            .logo:hover{
+                -webkit-text-fill-color:transparent;
+                font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0);
+            color: transparent;
+            -webkit-background-clip:text;*/
+              
+} 
+.logo{
+font-weight: ;
+            font-size: 49px;
+            font-weight: 600;
+            text-align: center; 
+            background:linear-gradient(to right, #a91b60,#ff0080,#ebe0d0,#EC9EC0);
+            color: transparent;
+            -webkit-background-clip:text;
+            animation: text 4s infinite alternate;
+        text-shadow: 0px 0px 20px f9ac9d;
+        }
+        @keyframes text{
+100%{
+    
+text-shadow: 0px 0px 20px #a91b60;
+}
+         
+}
+             nav li a.active,
+            nav li a:hover {
+                -webkit-text-fill-color:transparent;
+                font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0,#ece0b0);
+            color: transparent; 
+            -webkit-background-clip:text;
+            border-bottom:#ebe0d0 2px solid;
+             }
+            .main-text{
+                padding-top: 0px;
+                margin-top:0px;
+
+            }
+            .main-text h2{
+                font-size: 60px;
+                line-height: 1;
+                text-align: center;
+                color: #ebe0b0;
+                margin-top: 0px;
+            }
+            .main-text h2 span {
+                color: #a91b60;
+            }
+            .container{
+                background-color
+            width: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(359px,auto));
+            margin-left: 50px;
+            display: grid;
+            grid-gap: 30px 30px;
+            grid-template-rows:400px 400px 400px   ;
+            grid-template-columns:400px 400px 400px ;
+            margin-right: 50px;
+            margin-top: 50px;
+            border-style: groove 3px gray;
+        
+           
+                /*display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(359px,auto));
+
+           margin-left: 100px;
+            margin-right: 100px;*/
+            }
+            .row{
+                position: relative;
+                overflow: hidden;
+                border-radius: 50%;
+                cursor: pointer;
+                 box-shadow: 0px 0px 10px #ebe0b0;
+            
+            }
+            .row img{
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                display: block;
+                transition: tranfrom  0.5s;
+                padding: 20px;
+                border-style:double 5px #EBE0D0;
+                background-size: 400px 400px;
+                background-repeat: no-repeat;
+box-shadow: #a91b60 0px 20px 30px -10px;
+
+
+            }
+            img{
+                background-repeat: no-repeat;
+                background-size: 300px 300px;
+                height:300px ;
+                width: 300px;
+                 box-shadow: 0px 20px 30px -10px #EBE0D0;
+border-radius: 50%;
+            }
+            .layer{
+                width: 330px;
+                height: 0;
+                background: linear-gradient(#ebe0d0,#a91b60,#ff0080,#EC9EC0);
+                position: absolute;
+                border-radius: 50%;
+                left: 0;
+                bottom: 0;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0 40px;
+                transition: height 0.8s;
+                   box-shadow: 0px 20px 30px -10px #A91B60;
+                opacity: 0.9;
+
+            }
+            .layer h5{
+                color: wheat;
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                box-shadow:0px 20px 30px -10px #A91B60; 
+        
+            }
+            .layer p{
+                color: white;
+                font-size: 1rem;
+                line-height: 1.8;
+            
+            }
+            .layer i{
+                color: #ff004f;
+                margin-top: 20px;
+                font-size: 20px;
+                background: white;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+            }
+            .row:hover img{
+                transform: scale(1.1);
+
+            }
+            .row:hover .layer{
+                height: 100%;
+
+            }
+        button{
+            border-radius: 10%;
+            b
+        }
+.btn{
+    width: 180px;
+    height: 48px;
+    background-color: white;
+    font-size: 19px;
+    color: wheat;
+    border-radius:40px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg,black);
+    border-radius: 40px;
+    background-size: 200%;
+    z-index: -1;
+    background-position: 0 0;
+    filter: blur(5px);
+     transition: .3s ease;
+
+}
+.btn:hover::before{
+    background-position: 100% 0;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+   background: linear-gradient(45deg,#EC9EC0,#a91b60);
+   border-radius: 40px;
+   background-size: 200%;
+   z-index: -1;
+   transition: .5s ease;
+
+}
+.btn:hover::after{
+    background-position: 100% 0;}
+    .home-sci a{
+        display: flex;
+        width: 20px;
+        height: 20px;
+         height: 20px;
+        background: linear-gradient(45deg, #a38089,#ffa8b5,#FF0080 );
+        border-radius: 50%;
+        font-size: 20px;
+        color:wheat;
+        text-decoration: none;
+        z-index: 1;
+        padding: 15PX;
+        filter: blur(0px);
+    transition: .3s ease;
+}
+    </style>
+</head>
+<body>
+ <header>
+            <div class="logo">
+                <p>mahi jain</p>
+            </div>                    
+<nav>
+    <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about portfilo.html">About</a></li>
+       <li ><a href="rp.html">Resume</a></li>
+
+        <li><a href="pp pp.html" class="active">Projects</a></li>
+        <li><a href="cp.html">Contact</a></li>
+    </ul>
+</nav> 
+</header>
+<div>
+ <div id="portfolio" id="projet"> 
+<div class="main-text" id="projet">
+    <h2>Lastest<span>Project</span></h2>
+    <div class="container">
+   
+        <div class="row">
+         <center>   <img src="img gallery.jpg" ></center>
+        <div class="layer">
+            <h5>IMG GALLERY</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="photo.html" class="btn">clike</a>
+             
+        </div>
+    </div>
+
+<div class="row">
+         <center>   <img src="img gallery cap.jpg" ></center>
+        <div class="layer">
+            <h5>IMG GALLERY</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="image bar.html" class="btn">clike</a>
+
+        </div>
+    </div>
+
+<div class="row">
+   <center><img src="hospital.jpg" ></center>
+        <div class="layer">
+            <h5>HOSPITAL WEBSITE</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="hospital.html" class="btn">clike</a>
+            
+        </div>
+    </div>
+    <div class="row">
+         <center>   <img src="sinup.jpg" ></center>
+        <div class="layer">
+            <h5>SINUP FROM</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="sinup.html" class="btn">clike</a>
+            
+           
+
+        </div>
+    </div>
+     <div class="row">
+           <center> <img src="login.jpg" height="400px" width="400px"></center>
+        <div class="layer">
+            <h5>IOGIN FROM</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="iogin.html" class="btn">clike</a>
+            
+           
+
+        </div>
+    </div>
+     <div class="row">
+         <center>   <img src="contact5.jpg" ></center>
+        <div class="layer">
+            <h5>CONTACT FROM</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+             <a href="s.html" class="btn">clike</a>
+        </div>
+            
+            
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</body>
+</html>

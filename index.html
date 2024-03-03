@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title></title>
+        <style type="text/css">
+           
+        
+                 body{
+                background-color:black;               
+                background-repeat: no-repeat;
+                background-size: cover;
+                color:#EBE0b0;
+            }   header{
+            
+                background-color:;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index:100px;
+                top:0px;
+                left:0px;
+                right: 150px;
+                padding: 20px 10px;
+                position: fixed;
+            }
+            .logo{
+                font-weight: 600px;
+                font-size: 35px;
+                color:#ff0080;
+                animation: animate 3s ease;
+            }
+            .logo:hover{
+                -webkit-text-fill-color:transparent;
+                font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0,#ECE0B0);
+            color: transparent;
+            -webkit-background-clip:text;
+    
+    
+            }
+            nav li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0px 20px;
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 35px;
+                  letter-spacing: 1.5px;
+                cursor: pointer;}
+
+    
+    
+            
+            nav li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0px 20px;
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 35px;
+                  letter-spacing: 1.5px;
+                cursor: pointer;
+                text-decoration: none;}
+                 a{
+                font-size: 22px;
+                font-weight: bold;
+                text-decoration: underline;
+                color:#ffe4d6;
+            }
+            nav li a{
+                font-size: 28px;
+                color: #ff0080;
+                text-decoration: none;
+                font-weight: 600;
+                margin-left: 35px;
+            
+
+
+            }
+             nav li a.active,
+            nav li a:hover {
+                -webkit-text-fill-color:transparent;
+                font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            font-weight: 600;
+            background: linear-gradient(to right,#a91b60,#ff0080,#EC9EC0,#ece0b0);
+            color: transparent;
+            -webkit-background-clip:text;
+            border-bottom: 2px solid #a91b60;}
+        
+                .home{
+
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 300px;
+    
+
+}
+.home-content p{
+    max-width: 500px;
+    max-height: 400px;
+    color: #a91b60;
+    margin-left: 30px;
+    font-size: 18px;
+    }
+.home-content h1{
+    font-size: 56px;
+    font-weight:600px ;
+    color:#ece0b0;
+    margin-left: 30px;
+    
+}
+.home-content h3{
+    font-size: 36px;
+    font-weight: 400;
+    color: #EC9EC0;
+    margin-left: 30px;
+}
+.btn{
+    width: 180px;
+    height: 48px;
+    background-color: white;
+    font-size: 19px;
+    color: wheat;
+    border-radius:40px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg,#ff0080,#a38089,#FB8DA0);
+    border-radius: 40px;
+    background-size: 200%;
+    z-index: -1;
+    background-position: 0 0;
+    filter: blur(5px);
+    transition: .3s ease;
+}
+.btn:hover::before{
+    background-position: 100% 0;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+   background: linear-gradient(45deg,#B21368,#FF0080,#EC9EC0,#a91b60,#A38089,#FB8DA0,#FB8DA0);
+   border-radius: 40px;
+   background-size: 200%;
+   z-index: -1;
+   transition: .5s ease;
+}
+.btn:hover::after{
+    background-position: 100% 0;}
+    .home-sci a{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(45deg, #a38089,#ffa8b5,#FF0080 );
+        border-radius: 50%;
+        font-size: 20px;
+        color:wheat;
+        text-decoration: none;
+        z-index: 1;
+        padding: 15PX;
+        filter: blur(0px);
+    transition: .3s ease;
+    padding: 10PX;
+}
+.home-sci a::after{
+    content: :'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff0080,#a38089,#ffa8b5);
+    border-radius: 50%;
+    trasform:scale(.88);
+    z-index: -1;
+    filter: blur(0px);
+    transition: .3s ease;
+    color: whe;}
+
+.home-sci a::after:hover{
+    background-position: 100% 0;
+}
+.home-sci a::before:hover{
+    background-position: 100% 0;
+}
+
+       
+        .box{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            background:black;
+            border-radius: 50%;
+            margin: 1% auto 0;
+            margin: ;
+        }
+        .box::before
+        {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            height: 410px;
+            width: 410px;
+            background: linear-gradient(45deg,#B21368,#FF0080,#EC9EC0,#a91b60,#A38089,#FB8DA0,#FB8DA0);
+            background-size:400% ;
+            width: calc(100% * 5px);
+            height: calc(100% * 5px);
+            z-index: -1;
+            animation: animate 20s linear infinite;
+            border-radius: 50%;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
+
+       .box::after{
+            position: absolute;
+            content: '';
+            left: -2px;
+top: -2px;
+height: 400px;
+width: 400px;
+ 
+background-size: 400px;
+width: calc(100%,5px);
+height: calc(100%,5px);
+ animation: animate 20s linear infinite;
+border-radius: 50%
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.box::before{
+    filter: blur(40px);
+    opacity: 0.95;
+}
+
+.content img{
+
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    border:wheat 4px solid;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px
+
+}
+
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>MAHI JAIN</p>
+            </div>                    
+<nav>
+    <ul>
+        <li><a href="home portpolio.html" class="active">Home</a></li>
+        <li><a href="about portfilo.html">About</a></li>
+        <li><a href="rp.html">Resume</a></li>
+
+        <li><a href="pp pp.html">Projects</a></li>
+        <li><a href="cp.html">Contact</a></li>
+    </ul>
+</nav> 
+           
+        </header>
+       
+        <section class="home">
+            <div class="home-sci">
+            <CENTER>    <a href="#" class="fa fa-facebook"></a></CENTER>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-twitter"></a>
+</div>
+            <div class="home-content">
+                <h1>Hi, i'm Mahi jain</h1>
+                <h3>Frontend Devveloper</h3>
+                 <p> Hi I'm MAHI  JAIN...i'm pursuing Btech[Bachelor of technology degree]from Babulal tarabai institude of reasearch & technology Sagar MP.</p><br>
+                <a href="#" class="btn">ABOUT ME</a>
+                <a href="#" class="btn">RESUME</a>
+                
+
+            </div>
+             
+ <div class="box">
+                <div class="content">
+                    <img src="mahi1.jpg">
+             </div> 
+        </div>
+        
+
+        </section>
+    </body>
+</html>
